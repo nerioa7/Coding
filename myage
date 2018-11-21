@@ -1,0 +1,2 @@
+myage= int(input("How old are you!"))
+print("hi there, you are" ,myage,"years old")
