@@ -1,0 +1,4 @@
+answer = int(input("What is the remainder of 7"))
+remainder= (answer%7)
+print ("the remainderis" , remainder)
+
