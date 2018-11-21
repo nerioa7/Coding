@@ -1,0 +1,6 @@
+#funtion  could replace any word!
+#x equals to input from the user!
+def funtion2(x):
+    return 9*x
+a=funtion(3)
+print(a)
