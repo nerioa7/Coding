@@ -1,0 +1,13 @@
+def text(word):
+    spaces = 0
+    for char in word:
+        if char == (" "):
+            spaces = spaces + 1
+    return spaces
+
+def main():
+    text1=input("please enter sentence ")
+  
+    return text(text1,)
+
+print(main())
