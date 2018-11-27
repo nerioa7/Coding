@@ -1,0 +1,10 @@
+def numpage (page):
+    if page % 2 == 0:
+        return True
+    else:
+        return False
+for page in range(20):
+    if numpage(page):
+        print(page)
+    else:
+        print("%60s%d" % (" ", page))
