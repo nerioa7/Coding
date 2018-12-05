@@ -1,0 +1,9 @@
+#in this question it ask the me to find the name "Harry"
+class Person:
+  def __init__(self, name):
+    self.name = name
+   
+
+p1 = Person("harry")
+
+print(p1.name)
