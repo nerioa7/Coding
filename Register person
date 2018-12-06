@@ -1,26 +1,26 @@
-class CashRegister :
+class CashRegister:
+    def __init__(self) :
+        self._itemCount = 0
+        self._totalPrice = 0.0
+        #here is the pound converter 
+    def getPound(self):
+        print(int(self._totalPrice))
+        
+   
 
- def __init__(self) :
-     self._itemCount = 0
-     self._totalPrice = 0.0
+    def addItem(self, price) :
+        self._itemCount = self._itemCount + 1
+        self._totalPrice = self._totalPrice + price
 
+    def getTotal(self) :
+        return self._totalPrice
 
- def addItem(self, price) :
-     self._itemCount = self._itemCount + 1
-     self._totalPrice = self._totalPrice + price
-
-
- def getTotal(self) :
-     return self._totalPrice
- 
-
-
- def getCount(self) :
-     return self._itemCount
-
- def clear(self) :
-     self._itemCount = 0
-     self._totalPrice = 0.0
+    def getCount(self) :
+        return self._itemCount
+    
+    def clear(self) :
+        self._itemCount = 0
+        self._totalPrice = 0.0
 
 
 register1 = CashRegister()
@@ -28,9 +28,12 @@ register1.addItem(0.90)
 register1.addItem(0.95)
 register2 = CashRegister()
 register2.addItem(1.90)
+#here is the pound converter from pence to pound 
 register1.getPound()
+
+
+
 print("register 1 item count is",register1._itemCount)
 print("register 1 total price is",register1._totalPrice)
 print("register 2 item count is",register2._itemCount)
 print("register 2 total price is",register2._totalPrice)
-
