@@ -28,7 +28,7 @@ register1.addItem(0.90)
 register1.addItem(0.95)
 register2 = CashRegister()
 register2.addItem(1.90)
-
+register1.getPound()
 print("register 1 item count is",register1._itemCount)
 print("register 1 total price is",register1._totalPrice)
 print("register 2 item count is",register2._itemCount)
