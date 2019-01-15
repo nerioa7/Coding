@@ -1,0 +1,40 @@
+import math
+
+class Circle ():
+    def __init__(self, radius):
+        self.radius = radius
+
+    def area(self):
+        return self.radius * self.radius * 3.14
+
+class Rectangle():
+    def __init__(self, longside, shortside):
+        self.longside = longside
+        self.shortside = shortside
+
+    def area (self):
+        return self.longside * self.shortside
+
+class Square(Rectangle):
+    def __init__(self, longside, shortside):
+        self.longside = longside
+        self.shortside = shortside
+        
+circlArea= Circle (20)
+print ("circle 1 radius: ", circlArea.radius)
+print ("circle 2 radius: ", circlArea.area())
+   
+circle_1 = Circle (2)
+if circle_1.area() != 3.14:
+    print("radius is wrong", circle_1.area())
+else:
+    print ("areas is fully completed")
+rect1 = Rectangle (5, 4)
+rect2 = Rectangle (6, 5)
+
+print ("rectangle area 1 is: ", rect1.area())
+print ("rectangle area 2 is: ", rect2.area())
+
+sql_1 = Square (5, 5)
+
+print ("sqaure area 1 is: ", sql_1.area())
