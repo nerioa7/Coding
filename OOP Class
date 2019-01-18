@@ -1,0 +1,56 @@
+############### QUESTION 4
+class X(object):
+    def __init__(self, a):
+        self.num = a
+        
+        def doubleup(self):
+            self.num *= 2
+            return self.self
+
+class Y(X):
+    def __init__(self, a):
+        X.__init__(self, a)
+        
+        def tripleup(self):
+            self.num *= 3
+#so the programming for obj.num is equal to 4
+obj = Y(4)
+print(obj.num)
+#obj.num shows that 4 return self.num *2 equals to 8
+obj.doubleup()
+print(obj.num)
+#obj.num is now 8 self.num time to *3 equals to 24
+obj.tripleup()
+print(obj.num)
+
+############QUESTION 5#############
+# Base or Super class
+class Person(object):
+    def __init__(self, name):
+     self.name = name
+    def getName(self):
+        return self.name
+
+    def isEmployee(self):
+        return False
+
+# Inherited or Subclass (Note Person in bracket)
+class Employee(Person):
+    def __init__(self, name, eid):
+        super(Employee, self).__init__(name)
+        self.empID = eid
+
+    def isEmployee(self):
+        return True
+
+    def getID(self):
+        return self.empID
+
+
+
+
+emp = Employee("Geek1", "E101")
+print(emp.getName(), emp.isEmployee(), emp.getID())
+#emp.getname will return the employee name= Geek1
+#emp.isEmployee funtion will read and return that Geek1 is a employee
+#emp.hetID is going to return the employee emp.getID which is "E101"
