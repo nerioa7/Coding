@@ -1,0 +1,40 @@
+import java.util.Scanner;
+
+class week4 {
+	
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+					
+						
+				System.out.println("where do you study?\n ");{	// here is the print statement 
+						String name = sc.nextLine( );// a place holder for user input
+						String uni = name.toLowerCase();//a place holder for user input and out puts lowercase 
+						int p = uni.length();// a placeholder for len count
+						System.out.println(p);// print the method out 
+						System.out.println(uni);
+				}
+				
+				System.out.println("What year are you studing in?\n ");{// same code appyies
+					String level = sc.nextLine();//
+					String first = level.toUpperCase();//
+					int q = first.length();//
+					System.out.println(q);//
+					System.out.println(first);
+				}
+				
+				System.out.println("Where do you live?\n ");{//
+					String location = sc.nextLine();//
+					String city = location.toLowerCase();//
+					int r = city.length();//
+					System.out.println(r);//
+					System.out.println(city);
+				
+				System.out.println("Mr Amaral studies at" + uni + "the level hes taken on is " + first + " and hes staying at "+ city+);
+				
+			
+					
+				}
+			
+	}
+}
