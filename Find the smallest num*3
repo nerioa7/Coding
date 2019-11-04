@@ -1,0 +1,29 @@
+# Coding find the smallest number fro three input "scanner"
+Java Code 
+
+    
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int first,second,third;//variables for three input
+        
+        System.out.println("Enter the first number: ");//statement one 
+        first = input.nextInt();//first input of int
+        
+        System.out.println("Enter your second number: ");//second statement
+        second = input.nextInt();//seond int input
+                
+        System.out.println("Enter you third number: ");//third statement
+        third = input.nextInt();//third input
+        
+        if ( first <= second && first <= third){//if statement is writing for smallest value
+            System.out.println("Smallest value is: " + first); //statement for the smallest vlaue
+        }
+        else if (second <= first && second <= third){//else if statement is writing for smallest value
+            System.out.println("Smallest value is: "+ second);//statement for the smallest vlaue
+        }
+        
+        else{//else statement is writing for smallest value
+            System.out.println("Smallest value is: "+ third);//statement for the smallest vlaue
+        }
+        }
+    }
