@@ -1,0 +1,14 @@
+###STRING FORMATING 
+print (" Hello {0} welcome back to {1} ".format ("Nerio", " Python"))
+
+print (" Hello {} welcome back to {} ".format ("Nerio", " Python"))
+
+x = (" Hello {0} welcome back to {1} ".format (10,16))
+print (x)
+
+#float formating
+print("I have sold %s {0:5.9f} pair of {1} ".format(50, "shoes"))
+
+#for i in the range 1,21, print and format the number to decimal 
+for i in range(1,21):
+  print("{0:2d} {1:3d} {2:4d}".format(i, i*i, i*i*i))
