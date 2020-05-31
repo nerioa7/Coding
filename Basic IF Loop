@@ -1,0 +1,6 @@
+name = input("What is the secret code?")
+
+if name == "Pop":
+  print("Welcome Mr Robot")
+else:
+  print("Error")
