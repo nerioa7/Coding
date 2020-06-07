@@ -1,0 +1,25 @@
+from datetime import datetime  
+#shrftime --> string for time libary 
+
+#declaring the now
+now = datetime.now()
+print ("Here is the date & Time:", now)
+
+#declaring the year, however i am initializing from the "now" variable
+year = now.strftime("%Y")
+print ("Year:", year)
+
+#declaring the month variable 
+months = now.strftime('%M')
+print ('Months:',months)
+
+#declaing the day variable 
+Day = now.strftime('%D --> %a')
+print ('Day:', Day)
+
+#FORMATING THE DATE IN THE VAI
+date_time = now.strftime("DATE: %Y-%M-%A TIME: %H:%M:%S ")
+print ( date_time)
+
+
+#https://www.programiz.com/python-programming/datetime/strftime
